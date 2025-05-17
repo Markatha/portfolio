@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/container.css";
+import "./css/sidebar.css";
+import "./css/about.css";
+import "./css/skills.css";
+import "./css/exp.css";
+import "./css/projects.css";
+import { createContext, useState } from "react";
+import About from "./components/About";
+import Sidebar from "./components/Sidebar";
+import Skill from "./components/Skill";
+import Experience from "./components/Experience";
+import BGD from "./components/BGD";
+import Projects from "./components/Projects";
+
+const Sidecontext = createContext(null);
 
 function App() {
+  const [sideActive, setSideActive] = useState("about");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Sidecontext.Provider value={{ sideActive, setSideActive }}>
+      <div className="conts">
+        <BGD />
+        <div className="container">
+          <div className="left-side">
+            <Sidebar />
+          </div>
+          <div className="right-side">
+            <About />
+            <Skill />
+            <Experience />
+            <Projects />
+          </div>
+        </div>
+      </div>
+    </Sidecontext.Provider>
   );
 }
 
 export default App;
+
+export { Sidecontext };

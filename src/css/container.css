@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 100px;
+  padding: 70px 10px;
+  color: aliceblue;
+}
+
+.container .left-side {
+  width: 600px;
+  min-width: 300px;
+}
+
+.container .right-side {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 50px;
+}

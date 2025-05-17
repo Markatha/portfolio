@@ -1,0 +1,52 @@
+.skill {
+  width: 100%;
+  height: auto;
+}
+
+.skill ul {
+  list-style-type: square;
+  padding: 20px;
+}
+
+.skill li {
+  color: aliceblue;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.skill li::marker {
+  color: aliceblue !important;
+}
+
+.skills-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.skills-container .skills-left {
+  width: 100%;
+}
+
+.skills-container .skills-right {
+  width: 40%;
+  height: auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.skills-right .stacks {
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 4px;
+  background-color: rgba(238, 130, 238, 0.267);
+}
