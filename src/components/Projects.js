@@ -1,6 +1,19 @@
+import { useInView } from "react-intersection-observer";
+import { useContext, useEffect } from "react";
+import { Sidecontext } from "../App";
+
 const Projects = () => {
+  const { setSideActive } = useContext(Sidecontext);
+  const { ref, inView } = useInView({ threshold: 0.5 });
+
+  useEffect(() => {
+    if (inView) {
+      setSideActive("projects");
+    }
+  }, [inView, setSideActive]);
+
   return (
-    <div className="projects">
+    <div className="projects" id="projects" ref={ref}>
       <strong>Projects</strong>
       <div className="projects-container">
         <div className="projects-left">

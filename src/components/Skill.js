@@ -7,10 +7,22 @@ import { DiMongodb } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiMysql } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useContext, useEffect } from "react";
+import { Sidecontext } from "../App";
 
 const Skill = () => {
+  const { setSideActive } = useContext(Sidecontext);
+  const { ref, inView } = useInView({ threshold: 0.5 });
+
+  useEffect(() => {
+    if (inView) {
+      setSideActive("skills");
+    }
+  }, [inView, setSideActive]);
+
   return (
-    <div className="skill">
+    <div className="skill" id="skills" ref={ref}>
       <strong>Skills & Stacks</strong>
       <div className="skills-container">
         <div className="skills-left">

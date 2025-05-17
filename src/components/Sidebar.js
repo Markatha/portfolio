@@ -3,8 +3,24 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import { useContext } from "react";
+import { Sidecontext } from "../App";
 
 const Sidebar = () => {
+  const { sideActive, setSideActive } = useContext(Sidecontext);
+
+  const handleClick = (section) => {
+    setSideActive(section);
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const buttons = [
+    { label: "About", id: "about" },
+    { label: "Skills", id: "skills" },
+    { label: "Experience", id: "experience" },
+    { label: "Projects", id: "projects" },
+  ];
+
   return (
     <div className="sidebar">
       <div className="sidebar-header">
@@ -17,22 +33,15 @@ const Sidebar = () => {
         </p>
       </div>
       <div className="sidebar-links">
-        <div className="btns active">
-          <div className="btn-line"></div>
-          <button>About</button>
-        </div>
-        <div className="btns">
-          <div className="btn-line"></div>
-          <button>Skills</button>
-        </div>
-        <div className="btns">
-          <div className="btn-line"></div>
-          <button>Experience</button>
-        </div>
-        <div className="btns">
-          <div className="btn-line"></div>
-          <button>Projects</button>
-        </div>
+        {buttons.map((btn) => (
+          <div
+            className={`btns ${sideActive === btn.id ? "active" : ""}`}
+            key={btn.id}
+          >
+            <div className="btn-line"></div>
+            <button onClick={() => handleClick(btn.id)}>{btn.label}</button>
+          </div>
+        ))}
       </div>
       <div className="sidebar-footer">
         <a href="#gmail">

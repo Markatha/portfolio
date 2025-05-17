@@ -1,6 +1,19 @@
+import { useInView } from "react-intersection-observer";
+import { useContext, useEffect } from "react";
+import { Sidecontext } from "../App";
+
 const Experience = () => {
+  const { setSideActive } = useContext(Sidecontext);
+  const { ref, inView } = useInView({ threshold: 0.5 });
+
+  useEffect(() => {
+    if (inView) {
+      setSideActive("experience");
+    }
+  }, [inView, setSideActive]);
+
   return (
-    <div className="experience">
+    <div className="experience" id="experience" ref={ref}>
       <strong>Experience</strong>
       <div className="exp-container">
         <div className="exp-left">

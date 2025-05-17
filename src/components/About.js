@@ -1,6 +1,19 @@
+import { useInView } from "react-intersection-observer";
+import { useContext, useEffect } from "react";
+import { Sidecontext } from "../App";
+
 const About = () => {
+  const { setSideActive } = useContext(Sidecontext);
+  const { ref, inView } = useInView({ threshold: 0.5 });
+
+  useEffect(() => {
+    if (inView) {
+      setSideActive("about");
+    }
+  }, [inView, setSideActive]);
+
   return (
-    <div className="about">
+    <div className="about" id="about" ref={ref}>
       <p>
         I am a skilled and dedicated{" "}
         <b style={{ color: "aliceblue" }}>Service Technician</b> with hands-on
