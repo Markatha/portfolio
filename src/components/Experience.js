@@ -1,6 +1,8 @@
 import { useInView } from "react-intersection-observer";
 import { useContext, useEffect } from "react";
 import { Sidecontext } from "../App";
+import resume from "../files/resume.pdf";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Experience = () => {
   const { setSideActive } = useContext(Sidecontext);
@@ -63,6 +65,13 @@ const Experience = () => {
               have the necessary components on hand for repairs and maintenance
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="exp-container">
+        <div className="exp-left">
+          <button onClick={() => (window.location = resume)}>
+            View Resume <FaArrowRightLong />
+          </button>
         </div>
       </div>
     </div>

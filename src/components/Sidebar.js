@@ -1,8 +1,6 @@
 import { BiLogoGmail } from "react-icons/bi";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 import { useContext } from "react";
 import { Sidecontext } from "../App";
 
@@ -18,7 +16,7 @@ const Sidebar = () => {
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
     { label: "Experience", id: "experience" },
-    { label: "Projects", id: "projects" },
+    { label: "Certifications", id: "certifications" },
   ];
 
   return (
@@ -44,20 +42,22 @@ const Sidebar = () => {
         ))}
       </div>
       <div className="sidebar-footer">
-        <a href="#gmail">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=deniegamark80@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BiLogoGmail />
         </a>
-        <a href="#linkedin">
+        <a
+          href="https://www.linkedin.com/in/mark-chester-deniega/din"
+          target="_blank"
+          rel="noreferrer"
+        >
           <CiLinkedin />
         </a>
-        <a href="#github">
+        <a href="https://github.com/Markatha" target="_blank" rel="noreferrer">
           <FaGithub />
-        </a>
-        <a href="#insta">
-          <FaInstagram />
-        </a>
-        <a href="#tiktok">
-          <FaTiktok />
         </a>
       </div>
     </div>

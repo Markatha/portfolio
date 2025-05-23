@@ -1,9 +1,9 @@
-.projects {
+.certifications {
   width: 100%;
   height: auto;
 }
 
-.projects-container {
+.certifications-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -11,31 +11,31 @@
   margin-bottom: 20px;
 }
 
-.projects-container .projects-left {
+.certifications-container .certifications-left {
   width: 220px;
   color: rgba(240, 248, 255, 0.842);
 }
 
-.projects-container .projects-right {
+.certifications-container .certifications-right {
   width: 100%;
 }
 
-.projects-right h3 {
+.certifications-right h3 {
   font-size: 26px;
 }
 
-.projects-right h5 {
+.certifications-right h5 {
   font-size: 17px;
   font-weight: normal;
   color: rgba(240, 248, 255, 0.842);
   margin: 12px 0;
 }
 
-.projects-right ul {
+.certifications-right ul {
   padding-left: 20px;
 }
 
-.projects-right ul li {
+.certifications-right ul li {
   color: rgba(240, 248, 255, 0.842);
   margin-bottom: 12px;
 }

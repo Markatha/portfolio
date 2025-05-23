@@ -10,7 +10,7 @@ import Sidebar from "./components/Sidebar";
 import Skill from "./components/Skill";
 import Experience from "./components/Experience";
 import BGD from "./components/BGD";
-import Projects from "./components/Projects";
+import Certifications from "./components/Certification";
 
 const Sidecontext = createContext(null);
 
@@ -28,7 +28,7 @@ function App() {
             <About />
             <Skill />
             <Experience />
-            <Projects />
+            <Certifications />
           </div>
         </div>
       </div>
