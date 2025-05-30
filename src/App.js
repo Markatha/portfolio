@@ -3,7 +3,6 @@ import "./css/sidebar.css";
 import "./css/about.css";
 import "./css/skills.css";
 import "./css/exp.css";
-import "./css/projects.css";
 import { createContext, useState } from "react";
 import About from "./components/About";
 import Sidebar from "./components/Sidebar";
