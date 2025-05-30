@@ -53,3 +53,7 @@
   color: rgba(240, 248, 255, 0.842);
   margin-bottom: 12px;
 }
+
+.exp-left a {
+  text-decoration: none;
+}

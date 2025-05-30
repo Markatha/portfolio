@@ -19,6 +19,31 @@ const Experience = () => {
       <strong>Experience</strong>
       <div className="exp-container">
         <div className="exp-left">
+          <small>Dec 2021 - Present</small>
+        </div>
+        <div className="exp-right">
+          <h3>Service Engineer</h3>
+          <h5>PC Micron Enterprises, Sorsogon City</h5>
+          <ul>
+            <li>
+              Installed new Sharp Copier or system unit at customer sites. This
+              involved setting up xerox machines, setting up driver software for
+              the peripherals and ensuring that everything is functioning
+              properly.
+            </li>
+            <li>
+              Diagnosed the issue and performed necessary repairs. This involved
+              troubleshooting electrical, mechanical or software problems
+            </li>
+            <li>
+              Responsible for managing spare parts inventory to ensure that they
+              have the necessary components on hand for repairs and maintenance
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="exp-container">
+        <div className="exp-left">
           <small>Sep 2020 - Dec 2021</small>
         </div>
         <div className="exp-right">
@@ -44,34 +69,11 @@ const Experience = () => {
       </div>
       <div className="exp-container">
         <div className="exp-left">
-          <small>Dec 2021 - Present</small>
-        </div>
-        <div className="exp-right">
-          <h3>Service Technician</h3>
-          <h5>PC Micron Enterprises, Sorsogon City</h5>
-          <ul>
-            <li>
-              Installed new Sharp Copier or system unit at customer sites. This
-              involved setting up xerox machines, setting up driver software for
-              the peripherals and ensuring that everything is functioning
-              properly.
-            </li>
-            <li>
-              Diagnosed the issue and performed necessary repairs. This involved
-              troubleshooting electrical, mechanical or software problems
-            </li>
-            <li>
-              Responsible for managing spare parts inventory to ensure that they
-              have the necessary components on hand for repairs and maintenance
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="exp-container">
-        <div className="exp-left">
-          <button onClick={() => (window.location = resume)}>
-            View Resume <FaArrowRightLong />
-          </button>
+          <a href={resume} target="_blank" rel="noopener noreferrer">
+            <button>
+              View Resume <FaArrowRightLong />
+            </button>
+          </a>
         </div>
       </div>
     </div>

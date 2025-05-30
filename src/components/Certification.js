@@ -21,7 +21,7 @@ function Certifications() {
         </div>
         <div className="certifications-right">
           <h3>Cisco Certified Network Associate</h3>
-          <h5>TESDA Sorsogon Provincial</h5>
+          <h5>RivanCyber Training Institute INC.</h5>
         </div>
       </div>
       <div className="certifications-container">
@@ -30,7 +30,7 @@ function Certifications() {
         </div>
         <div className="certifications-right">
           <h3>Computer Systems Servicing</h3>
-          <h5>Rivan Technology Institute</h5>
+          <h5>TESDA Sorsogon Provincial</h5>
         </div>
       </div>
     </div>

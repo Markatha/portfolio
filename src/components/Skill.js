@@ -27,16 +27,14 @@ const Skill = () => {
       <div className="skills-container">
         <div className="skills-left">
           <ul>
-            <li>Equipment diagnostics & troubleshooting</li>
-            <li>Preventive maintenance & repair</li>
-            <li>Customer service & technical support</li>
-            <li>Electrical & mechanical systems</li>
-            <li>Tool and equipment handling</li>
-            <li>Safety compliance & documentation</li>
+            <li>Install & configure Computer Systems</li>
+            <li>Set-up Computer Networks</li>
+            <li>Maintain & repair Computer Systems & Networks</li>
+            <li>Printer Set-up & repair</li>
+            <li>Set-up Computer Servers</li>
             <li>Frontend Web development</li>
             <li>Backend Web development</li>
             <li>Photoshop</li>
-            <li>Canva</li>
           </ul>
         </div>
         <div className="skills-right">

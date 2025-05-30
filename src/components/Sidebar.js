@@ -23,7 +23,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar-header">
         <h3>MARK CHESTER DENIEGA</h3>
-        <h5>Service Technician | Web Developer</h5>
+        <h5>Service Engineer | Full Stack Developer</h5>
         <p>
           Reliable and detail-oriented technician with experience in system
           repairs and maintenance, also skilled in web development for creating
@@ -63,5 +63,4 @@ const Sidebar = () => {
     </div>
   );
 };
-
 export default Sidebar;
